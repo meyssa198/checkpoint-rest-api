@@ -11,7 +11,7 @@ require('dotenv').config();
 const connectDB = async () => {
     try {
         await mongoose.connect(
-                `mongodb+srv://${process.env.mydbname}:${process.env.mypwd}@cluster0.dxosq.mongodb.net/${process.env.db}?retryWrites=true&w=majority`, {
+            `mongodb+srv://meyssadb:meyssa1998@cluster0.dxosq.mongodb.net/checkpoint-rest-api?retryWrites=true&w=majority`, {
                     useNewUrlParser: true,
                     useUnifiedTopology: true
                 })
